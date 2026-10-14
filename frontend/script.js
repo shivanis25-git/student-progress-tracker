@@ -73,7 +73,7 @@ progressForm.addEventListener("submit", async (event) => {
         if (editingId !== null) {
 
             const response = await fetch(
-                `http://localhost:3000/progress/${editingId}`,
+                `https://student-progress-tracker-api-4t43.onrender.com/progress/${editingId}`,
                 {
                     method: "PUT",
 
@@ -122,7 +122,7 @@ progressForm.addEventListener("submit", async (event) => {
 
 
         const response = await fetch(
-            "http://localhost:3000/progress",
+            "https://student-progress-tracker-api-4t43.onrender.com/progress",
             {
                 method: "POST",
 
@@ -174,7 +174,7 @@ async function loadProgress() {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/progress"
+            "https://student-progress-tracker-api-4t43.onrender.com/progress"
         );
 
 
@@ -269,7 +269,7 @@ async function editProgress(id) {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/progress"
+            "https://student-progress-tracker-api-4t43.onrender.com/progress"
         );
 
 
@@ -374,7 +374,7 @@ async function deleteProgress(id) {
     try {
 
         const response = await fetch(
-            `http://localhost:3000/progress/${id}`,
+            `https://student-progress-tracker-api-4t43.onrender.com/progress/${id}`,
             {
                 method: "DELETE"
             }
